@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-6">
             <a
-              href="https://github.com/your-username/ai-personality"
+              href="https://github.com/sennsy12/Ai-Personality"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-primary transition-colors flex items-center space-x-2"
