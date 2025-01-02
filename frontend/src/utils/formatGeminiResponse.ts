@@ -2,11 +2,11 @@ export const formatGeminiResponse = async (response: string): Promise<string> =>
   try {
     const sections = response.split('\n')
       .filter(line => line.trim() !== '')
-      .filter(line => !line.match(/^\d+\./)) // Remove numbered points
-      .map(line => line.replace(/^[A-Za-z\s]+:/, '').trim()) // Remove labels
+      .filter(line => !line.match(/^\d+\./)) 
+      .map(line => line.replace(/^[A-Za-z\s]+:/, '').trim()) 
       .filter(line => line.length > 0)
 
-    // Select key phrases and combine them into a poetic verse
+    
     const verse = `In the professional landscape, you shine as
 ${sections.slice(0, 2).join('\n')}
 Your unique approach reveals
